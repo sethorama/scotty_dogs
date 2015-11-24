@@ -10,5 +10,10 @@
   <%= @puppy.description %>
 </p>
 
+<p>
+  <strong>Images</strong>
+  <%= image_tag @puppy.image.url(:large) %>
+</p>
+
 <%= link_to 'Edit', edit_puppy_path(@puppy) %> |
 <%= link_to 'Back', puppies_path %>
